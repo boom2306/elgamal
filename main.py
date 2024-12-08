@@ -45,6 +45,7 @@ def decrypt(c1, c2, x, p):
 
   return m
 
+# inputs
 p = 22
 g, h, x = key_gen(p)
 m = 655656
@@ -52,6 +53,7 @@ m = 655656
 c1, c2 = encrypt(m, g, h, p)
 m1 = decrypt(c1, c2, x, p)
 
+# outputs
 print("original:", m)
 print("encrypted:", c1, c2)
 print("decrypted:", m1)
