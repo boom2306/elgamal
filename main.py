@@ -85,7 +85,7 @@ if __name__ == "__main__":
 
     if choice == "1":
         print("\nKey Generation")
-        bit_length = int(input("Enter the bit length for the prime number, example (256, 512, 1024):"))
+        bit_length = int(input("Enter the bit length for the prime number, example (256, 512, 1024): "))
         public_key, private_key = generate_keys(bit_length)
         print(f"Public Key: p = {public_key[0]}, g = {public_key[1]}, h = {public_key[2]}")
         print(f"Private Key: x = {private_key}")
